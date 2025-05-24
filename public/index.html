@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Share | Advanced Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File Transfer</h1>
+            <p class="subtitle">Simple file sharing tool</p>
+        </header>
+        
+        <main>
+            <section class="upload-section">
+                <div class="drop-area" id="dropArea">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & drop files here</p>
+                    <p>or</p>
+                    <button id="selectFileBtn">Select File</button>
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+                
+                <div id="fileInfo" class="file-info hidden">
+                    <p><strong>Selected file:</strong> <span id="fileName"></span></p>
+                    <div class="settings">
+                        <div class="setting">
+                            <label for="expires">Expires after:</label>
+                            <select id="expires">
+                                <option value="10m">10 minute</option>
+                                <option value="1h">1 hour</option>
+                                <option value="24h" selected>1 day</option>
+                                <option value="7d">7 days</option>
+                                <option value="30d">30 days</option>
+                                <option value="never">Never</option>
+                            </select>
+                        </div>
+                        <div class="setting">
+                            <label for="maxDownloads">Max downloads:</label>
+                            <input type="number" id="maxDownloads" min="1" value="1">
+                        </div>
+                    </div>
+                    <button id="uploadBtn">Upload File</button>
+                </div>
+            </section>
+            
+            <section class="files-section">
+                <h2>Your Files</h2>
+                <div class="file-list" id="fileList">
+                    <p class="empty-message">No files available</p>
+                </div>
+            </section>
+        </main>
+        
+        <div id="notification" class="notification hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "1748086705034-788717504.jpg": {
+    "originalName": "a609e3d12043827f66a8c1d5fba60e66.jpg",
+    "path": "C:\\Users\\aleks\\OneDrive\\Desktop\\FileTransfer\\uploads\\1748086705034-788717504.jpg",
+    "downloadCount": 2,
+    "maxDownloads": 10,
+    "expiresAt": 1748691505074,
+    "createdAt": 1748086705074
+  },
+  "1748086803872-271157920.png": {
+    "originalName": "photo.png",
+    "path": "C:\\Users\\aleks\\OneDrive\\Desktop\\FileTransfer\\uploads\\1748086803872-271157920.png",
+    "downloadCount": 1,
+    "maxDownloads": 15,
+    "expiresAt": 1748950803901,
+    "createdAt": 1748086803901
+  }
+}
