@@ -4,8 +4,8 @@ A simple REST API for uploading files with configurable expiration and download 
 
 ## Base URLs
 
-- **Local development**: `http://localhost:3000`
-- **Network access**: `http://10.0.0.2:3000`
+- **Desktop development**: `http://localhost:3000`
+- **Mobile development**: `http://10.0.0.2:3000`
 
 ## API Endpoint
 
