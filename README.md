@@ -5,11 +5,9 @@
 
 1. Установите Node.js https://nodejs.org/en
 2. Откройте PowerShell пишите следующие команды:
-```bash
-  {
+   1)```bash
     npm -v
-    node -v
-  }
+    node -v```
 Если выдает ошибку 
 ## Base URLs
 
@@ -44,3 +42,4 @@
   "maxDownloads": 5,
   "message": "File uploaded successfully"
 }
+```
