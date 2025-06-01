@@ -38,7 +38,7 @@ Server running on http://localhost:3000
 
 ## API Endpoint
 
-- **Конечная точка загрузки файла на сервер**: `http://10.0.0.2:3000`
+- **Конечная точка загрузки файла на сервер**: `api/upload`
 
 ## Request
 
