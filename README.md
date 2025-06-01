@@ -4,11 +4,32 @@
 ## Запуск сервера
 
 1. Установите Node.js https://nodejs.org/en
-2. Откройте PowerShell пишите следующие команды:
-   1)```bash
+2. Проверьте установку, выполнив в командной строке/терминале:
+```bash
     npm -v
-    node -v```
-Если выдает ошибку 
+    node -v
+```
+Если выдает ошибку, попробуйте:
+```bash
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+3. Установите зависимости:
+```bash
+   npm init -y
+   npm install express multer cors
+```
+4. Запустите сервер:
+- Перейдите в директорию где лежит файл server.js
+```bash
+   cd C:\путь_к_вашей_папке\FileTransfer-main
+```
+- Запуск сервера
+```bash
+   node server.js
+```
+```
+Server running on http://localhost:3000
+```
 ## Base URLs
 
 - **Desktop development**: `http://localhost:3000`
