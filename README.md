@@ -19,7 +19,7 @@
    npm install express multer cors
 ```
 4. Запустите сервер:
-- Перейдите в директорию где лежит файл server.js
+- Перейдите в директорию где лежит файл `server.js`
 ```bash
    cd C:\путь_к_вашей_папке\FileTransfer-main
 ```
@@ -27,28 +27,31 @@
 ```bash
    node server.js
 ```
+- Сообщение об успешном запуске сервера
 ```
 Server running on http://localhost:3000
 ```
-## Base URLs
+## Базовые URL
 
-- **Desktop development**: `http://localhost:3000`
-- **Mobile development**: `http://10.0.0.2:3000`
+- **Для десктопной версии**: `http://localhost:3000`
+- **Для мобильной версии**: `http://10.0.0.2:3000`
 
 ## API Endpoint
+
+- **Конечная точка загрузки файла на сервер**: `http://10.0.0.2:3000`
 
 ## Request
 
 ### Headers
 - `Content-Type`: `multipart/form-data`
 
-### Parameters (form-data)
+### Параметры запроса (form-data)
 
-| Name          | Type      | Required | Default | Description               |
-|---------------|-----------|----------|---------|---------------------------|
-| `file`        | file      | Yes      | -       | File to upload            |
-| `expires`     | integer   | No       | 7       | Days until link expires   |
-| `maxDownloads`| integer   | No       | 1       | Maximum allowed downloads |
+| Имя           | Тип данных | Обязателен | Значение по умолчанию | Описание                  |
+|---------------|------------|------------|-----------------------|---------------------------|
+| `file`        | file       | Да         | -                     | Загружаемый файл          |
+| `expires`     | integer    | Нет        | 7d                    | Срок хранения(min-минуты, h-часы, d-дни, w-недели) |
+| `maxDownloads`| integer    | Нет        | 1                     | Максимальное количество загрузок |
 
 ## Response
 
