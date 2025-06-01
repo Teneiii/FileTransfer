@@ -1,7 +1,16 @@
-# File Upload API
+# API Загрузки файлов 
 
-A simple REST API for uploading files with configurable expiration and download limits.
 
+## Запуск сервера
+
+1. Установите Node.js https://nodejs.org/en
+2. Откройте PowerShell пишите следующие команды:
+ - ```bash
+  {
+    npm -v
+    node -v
+  }
+Если выдает ошибку 
 ## Base URLs
 
 - **Desktop development**: `http://localhost:3000`
