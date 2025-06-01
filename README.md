@@ -5,7 +5,7 @@
 
 1. Установите Node.js https://nodejs.org/en
 2. Откройте PowerShell пишите следующие команды:
- - ```bash
+```bash
   {
     npm -v
     node -v
